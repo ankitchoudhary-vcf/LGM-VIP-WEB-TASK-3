@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    background: linear-gradient(to right bottom, #4b2df3, #144eed, #0099e0, #07d4d4, #33eccd);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+main lable {
+    margin-top: 20px;
+    font-size: calc(16px + 2vmin);
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.login-component {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+.login-card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+    backdrop-filter: blur(2rem);
+    margin: 0px 15px;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+.login-card a {
+    text-decoration: none;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    cursor: pointer;
+    background: #0a2df0;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 1rem;
+}
+
+.login-card img {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.admin {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.login {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-admin-card {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+    backdrop-filter: blur(2rem);
+    margin: 0px 15%;
+    padding: 20px;
+    border-radius: 2rem;
+}
+
+.login-admin-card img {
+    display: flex;
+    flex: 1;
+    height: 500px;
+}
+
+.login-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.login-form img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    flex: 1;
+    margin: 15px;
+}
+
+.form-field input {
+    display: flex;
+    flex: 1;
+    border: none;
+    padding: 15px 5px;
+    border-radius: 1rem;
+    font-size: calc(10px + 2vmin);
+    font-weight: 500;
+}
+
+.form-field select {
+    display: flex;
+    flex: 1;
+    border: none;
+    padding: 15px;
+    border-radius: 1rem;
+    font-size: calc(10px + 2vmin);
+    font-weight: 500;
+}
+
+.form-field label {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.form-field button {
+    display: flex;
+    flex: 1;
+    background: #0a2df0;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    padding: 15px 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    background: linear-gradient(to top right, rgba(255,255,255,0.9), rgba(255,255,255,0.2));
+    backdrop-filter: blur(2rem);
+    justify-content: stretch;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.navbar-title {
+    display: flex;
+    font-size: calc(12px + 2vmin);
+    font-weight: 800;
+    padding: 10px 0px;
+    color: #ffffff;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.navbar-title i, .menu-item i {
+    margin-right: 15px;
+}
+
+
+.navbar-menu {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: -webkit-fill-available;
+}
+
+.menu-item {
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    padding: 15px;
+    color: #041cf7;
+    margin: 10px 0px;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.dashboard-main {
+    display: flex;
+    flex: 1;
+    flex-flow: wrap;
+    margin: 20px;
+    align-content: baseline;
+    justify-content: center;
+}
+
+.classes, .Students {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 20px;
+    align-content: baseline;
+    justify-content: center;
+}
+
+.counter-card {
+    display: flex;
+    height: 100px;
+    width: 300px;
+    justify-content: stretch;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px;
+    background: linear-gradient(to top right, rgba(255,255,255,0.9), rgba(255,255,255,0.2));
+    backdrop-filter: blur(2rem);
+    border-radius: 1rem;
+}
+
+.vertical-line {
+    background: #cd08e7;
+    display: flex;
+    align-items: stretch;
+    margin-right: 15px;
+    width: 5px;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.counter-card .title {
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.counter-card .count {
+    font-size: calc(10px + 2vmin);
+    font-weight: 500;
+}
+
+.add-class, .class-details, .add-student, .Students-details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to top right, rgba(255,255,255,0.9), rgba(255,255,255,0.2));
+    backdrop-filter: blur(2rem);
+    border-radius: 1rem;
+}
+
+.add-class .title, .class-details .title, .add-student .title, .Students-details .title  {
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+    font-size: calc(10px + 2vmin);
+    font-weight: 800;
+    background: linear-gradient(to top right, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    backdrop-filter: blur(2rem);
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes-container, .students-details-container{
+    display: flex;
+    flex: 1;
+    width: 80%;
+    flex-direction: column;
+}
+
+.class-container, .student-container {
+    display: flex;
+    padding: 20px;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to top right, rgba(228, 95, 7, 0.9), rgba(228, 95, 7, 0.2));
+    backdrop-filter: blur(2rem);
+    margin-bottom: 20px;
+}
+
+.class-container:nth-child(even), .student-container:nth-child(odd) {
+    background: linear-gradient(to top right, rgba(44, 228, 7, 0.9), rgba(44, 228, 7, 0.2));
+    backdrop-filter: blur(2rem);
+}
+
+.student-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.class-item, .student-item {
+    display: flex;
+    flex: 1;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+}
+
+.trash-button {
+    display: flex;
+    flex: 1;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: #e70826;
+    color: #ffffff;
+}
+
+.trash-button i {
+    margin-right: 15px;
+}
+
+.menu-item:hover, .active {
+    background-color: #ffffff;
+}
+
+.form-field input:focus {
+    border-radius: 0rem;
+}
+
+.form-field button:hover {
+    background: #cd08e7;
+}
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        width: 230px;
+    }
+    .login-admin-card img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    nav {
+        display: none;
+    }
+    .login-admin-card {
+        margin: 0px 15px;
+    }
+    .login-admin-card img {
+        display: none;
+    }
+    .login-form img {
+        display: flex;
+    }
+}
