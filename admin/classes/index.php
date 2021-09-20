@@ -19,6 +19,9 @@ include("../header.php");
                 <a class="menu-item" href="/admin/students">
                     <i class="fa fa-users" aria-hidden="true"></i><span>Students</span>
                 </a>
+                <a class="menu-item" href="/admin/subjects">
+                    <i class="fas fa-book"></i><span>Subjects</span>
+                </a>
                 <a class="menu-item" href="/admin/results">
                     <i class="fas fa-poll-h"></i><span>Results</span>
                 </a>
@@ -58,6 +61,10 @@ include("../header.php");
                 <div class="class-details">
                     <div class="title">Available Classes</div>
                     <div class="classes-container">
+                    <div class='class-container header'>
+                    <div class="class-item"><Strong>Class</Strong></div>
+                    <div class="class-item"><strong>Action</strong></div>
+                </div>
                     <?php
                         $data = $classes->getAllClasses();
                         foreach($data as $row){
@@ -66,7 +73,7 @@ include("../header.php");
                             echo $row['classno'];
                             echo "</div>";
                             echo "<div class='class-item'>";
-                            echo "<button class='trash-button' onclick='window.location.href=\"/admin/classes/deleteclass.php?classno=".$row['classno']."\"'> <i class='fas fa-trash-alt'></i>Delete</button>";
+                            echo "<button class='trash-button' onclick='window.location.href=\"/admin/classes/deleteclass.php?classno=".$row['classno']."\"'> <i class='fas fa-trash-alt'></i></button>";
                             echo "</div>";
                             echo "</div>";
                         }
