@@ -19,6 +19,9 @@ include("../header.php");
                 <a class="menu-item" href="/admin/students">
                     <i class="fa fa-users" aria-hidden="true"></i><span>Students</span>
                 </a>
+                <a class="menu-item" href="/admin/subjects">
+                    <i class="fas fa-book"></i><span>Subjects</span>
+                </a>
                 <a class="menu-item" href="/admin/results">
                     <i class="fas fa-poll-h"></i><span>Results</span>
                 </a>
