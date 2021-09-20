@@ -115,6 +115,7 @@ main lable {
     display: flex;
     flex: 1;
     margin: 15px;
+    justify-content: space-between;
 }
 
 .form-field input {
@@ -140,7 +141,6 @@ main lable {
 .form-field label {
     display: flex;
     flex: 1;
-    justify-content: center;
     align-items: center;
     font-size: calc(10px + 2vmin);
     font-weight: 600;
@@ -218,7 +218,7 @@ nav {
     justify-content: center;
 }
 
-.classes, .Students {
+.classes, .Students, .subjects {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -261,7 +261,7 @@ nav {
     font-weight: 500;
 }
 
-.add-class, .class-details, .add-student, .Students-details {
+.add-class, .class-details, .add-student, .Students-details, .add-subject, .subjects-details {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -272,9 +272,11 @@ nav {
     background: linear-gradient(to top right, rgba(255,255,255,0.9), rgba(255,255,255,0.2));
     backdrop-filter: blur(2rem);
     border-radius: 1rem;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
 }
 
-.add-class .title, .class-details .title, .add-student .title, .Students-details .title  {
+.add-class .title, .class-details .title, .add-student .title, .Students-details .title, .add-subject .title, .subjects-details .title  {
     display: flex;
     width: 100%;
     padding: 20px 0px;
@@ -288,14 +290,14 @@ nav {
     align-items: center;
 }
 
-.classes-container, .students-details-container{
+.classes-container, .students-details-container, .subject-details-container {
     display: flex;
     flex: 1;
     width: 80%;
     flex-direction: column;
 }
 
-.class-container, .student-container {
+.class-container, .student-container, .subjects-container {
     display: flex;
     padding: 20px;
     border-radius: 1rem;
@@ -306,12 +308,12 @@ nav {
     margin-bottom: 20px;
 }
 
-.class-container:nth-child(even), .student-container:nth-child(odd) {
+.class-container:nth-child(even), .student-container:nth-child(odd), .subjects-container:nth-child(odd) {
     background: linear-gradient(to top right, rgba(44, 228, 7, 0.9), rgba(44, 228, 7, 0.2));
     backdrop-filter: blur(2rem);
 }
 
-.student-form {
+.student-form, .subject-form {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -319,11 +321,23 @@ nav {
     align-items: center;
 }
 
-.class-item, .student-item {
+.class-item, .student-item, .subject-item {
     display: flex;
     flex: 1;
     font-size: calc(10px + 2vmin);
     font-weight: 600;
+    padding: 0px 10px;
+}
+
+.header {
+    background: rgb(65, 64, 64) !important;
+    color: #ffffff;
+}
+
+.subject-item span {
+    display: flex;
+    flex: 1;
+    flex-flow: wrap;
 }
 
 .trash-button {
@@ -341,8 +355,36 @@ nav {
     color: #ffffff;
 }
 
-.trash-button i {
-    margin-right: 15px;
+.success-btn {
+    display: flex;
+    flex: 1;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: #1a7403;
+    color: #ffffff;
+    margin: 5px;
+}
+
+.update-btn {
+    display: flex;
+    flex: 1;
+    font-size: calc(10px + 2vmin);
+    font-weight: 600;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: #a5a20c;
+    color: #ffffff;
+    margin: 5px;
 }
 
 .menu-item:hover, .active {
