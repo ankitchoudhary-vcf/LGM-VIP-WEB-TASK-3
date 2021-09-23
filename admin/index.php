@@ -9,7 +9,7 @@ include("./header.php");
     $connection = new Database_connection;
 
     if(isset($_SESSION['username'])){
-        header('location:./dashboard');
+        header('location:/admin/dashboard');
     }
 
     if(isset($_POST['login'])){
@@ -18,7 +18,7 @@ include("./header.php");
 
         if($username=="admin@gmail.com" && $password=="password"){
             $_SESSION['username'] = $username;
-            header('location:./dashboard');
+            // header('location:/admin/dashboard');
         }
     }
 ?>
