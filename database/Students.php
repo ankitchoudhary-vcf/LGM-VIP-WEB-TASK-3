@@ -40,4 +40,12 @@
             $statement->bindParam(':id', $id, PDO::PARAM_INT);
             $statement->execute();
         }
+        public function getStudentNameByClassnoAndrollno($classno, $rollno){
+            $query = "SELECT name FROM students WHERE classno = :classno and rollno = :rollno ORDER BY name";
+            $statement = $this->connect->prepare($query);
+            $statement->bindParam(':classno', $classno, PDO::PARAM_INT);
+            $statement->bindParam(':rollno', $rollno, PDO::PARAM_INT);
+            $statement->execute();
+            return $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
     }
