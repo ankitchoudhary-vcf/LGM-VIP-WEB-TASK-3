@@ -17,7 +17,7 @@
             </div>
             <div class="login-card">
                 <img src="/assets/img/Student_profile.png">
-                <a href="./student/">Click here to see the Result</a>
+                <a href="./student/">Check Result</a>
             </div>
         </div>
     </main>
