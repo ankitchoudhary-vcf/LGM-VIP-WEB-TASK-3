@@ -18,7 +18,6 @@ include("./header.php");
 
         if($username=="admin@gmail.com" && $password=="password"){
             $_SESSION['username'] = $username;
-            // header('location:/admin/dashboard');
         }
     }
 ?>
