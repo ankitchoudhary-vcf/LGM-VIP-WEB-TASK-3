@@ -34,7 +34,13 @@ require_once('../../database/Students.php');
         </nav>
         <div class="subjects">
             <div class="add-subject">
-                <div class="title">Result of this Student</div>
+                <div class="title">
+                    <?php
+                        $students = new Students();
+                        $name = $students->getStudentNameByClassnoAndrollno($_GET['classno'],$_GET['rollno']);
+                        echo "Result of ". $name[0]['name'];
+                    ?>
+                </div>
                 
                 <div class="subjects-details" style="width: 80%;">
                     <div class="title">Total Marks</div>
