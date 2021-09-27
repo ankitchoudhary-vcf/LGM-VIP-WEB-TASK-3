@@ -1,10 +1,10 @@
-<h1 style="color: #4b2df3; font-weight: 800; font-size: calc(14px + 2vmin)"> LGMVIP_Web_Development</h1>
+<h1 style="font-weight: 800; font-size: calc(14px + 2vmin)"> LGMVIP_Web_Development</h1>
 
 ***
 
 
 
-<h2 style="color: #4b2df3; font-weight: 600;">
+<h2 style="font-weight: 600;">
 Advance LEVEL Task
 <br>
 Student Result Management System.</h2>
@@ -18,7 +18,7 @@ The software exhibits some effortlessness in solving, adjusting, and eradicating
 
 ***
 
-<b style="color: #4b2df3; font-weight:700; font-size: calc(10px + 2vmin)">Prerequisites : </b> <span style="font-size: calc(10px + 1vmin); font-weight:600;">HTML, CSS, JavaScript, PHP and MySQL skills.</span>
+<b style="font-weight:700; font-size: calc(10px + 2vmin)">Prerequisites : </b> <span style="font-size: calc(10px + 1vmin); font-weight:600;">HTML, CSS, JavaScript, PHP and MySQL skills.</span>
 
 ***
 
@@ -26,5 +26,5 @@ The software exhibits some effortlessness in solving, adjusting, and eradicating
 ![LGMVIP_Web_Development]()
 
 
-<h2 style="color: orange; font-size: calc(10px + 2vmin)">
--By <a style="color: orange; font-size: calc(10px + 2vmin); cursor: pointer;" href="https://github.com/ankit1509">Ankit Choudhary</a></h2>
+<h2 style="font-size: calc(10px + 2vmin)">
+-By <a style="font-size: calc(10px + 2vmin); cursor: pointer;" href="https://github.com/ankit1509">Ankit Choudhary</a></h2>
